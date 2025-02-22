@@ -64,21 +64,6 @@ const WeatherNewComp = () => {
 
         <br />
 
-      {/* I Commit it, because app is more flickering when i type in input filed */}
-        {/* <div>
-          {loading && (
-            <ProgressBar
-              height="80"
-              width="80"
-              ariaLabel="progress-bar-loading"
-              wrapperStyle={{}}
-              wrapperClass="progress-bar-wrapper"
-              borderColor="white"
-              barColor="black"
-            />
-          )}
-        </div> */}
-
         {error && (
           <p className="text-red-600 text-center">Error: {error} </p>
         )}
