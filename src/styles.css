@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+body {
+    background-image: url(/clouds_sky_cloudy_178972_1280x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+.box3 {
+  @apply flex justify-center items-center gap-[30px] border-none p-10 bg-white/10 shadow-[0_0_15px_black];
+}
+
+.cityTemp {
+  @apply my-[10px] mx-0;
+}
+
+
+.cityTempNor {
+  display: inline-block;
+  font-size: 75px;
+  color: white;
+  margin: auto;
+  text-shadow: 0px 0px 9px black;
+}
+
+.cityTempMaxMin {
+  display: inline-block;
+  color: white;
+  font-size: 17px;
+  margin: auto;
+  text-shadow: 0px 0px 9px black;
+}
+
+.com2 {
+  display: flex;
+  margin: 20px;
+  text-align: left;
+  color: white;
+}
+
+.com3 {
+  width: 50%;
+  padding-left: 20px;
+  border-right: 1px solid white;
+}
+
+.com4 {
+  width: 50%;
+  padding: 0px 0px 0px 20px;
+  border-left: 1px solid white;
+}
+
+
+@media screen and (max-width: 518px) {
+  .box2 {
+    gap: 20px;
+  }
+
+  .box3 {
+    flex-direction: column;
+  }
+
+  .com2 {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  
+  .com3 {
+    width: 100%;
+    border-right: none;
+
+  }
+  
+  .com4 {
+    width: 100%;
+    border-left: none;
+  }
+}
